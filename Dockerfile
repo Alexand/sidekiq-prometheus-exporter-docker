@@ -4,6 +4,7 @@ LABEL maintainer "Alexand <j.a.cunha@gmail.com>"
 WORKDIR /usr/src/app
 COPY . /usr/src/app
 
+RUN gem install redis-namespace -v "~> 1.3"
 RUN gem install sidekiq -v "~> 5.0"
 RUN gem install sidekiq-prometheus-exporter -v "~> 0.1"
 

@@ -5,9 +5,11 @@ Thanks @Stretch for providing this amazing gem.
 
 ## How it works:
 
-- Tries to connect on `redis:6379` (accepts custom redis url by setting the env `REDIS_URL`)
+- Tries to connect on `redis:6379`
 - Exposes rack server on port `9292`
 - GET '/metrics' endpoint to serve the prometheus file
+- [Optional] accepts custom redis url by setting the env `REDIS_URL`
+- [Optional] accepts custom redis namespace by setting the env `REDIS_NAMEPSACE`
 
 ## Usage Example
 
